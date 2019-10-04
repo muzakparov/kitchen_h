@@ -10,6 +10,7 @@ import React, {
   useDebugValue
 } from "react";
 
+//use other hooks
 export default function Todo(props, ref) {
   const { todo } = props;
 
