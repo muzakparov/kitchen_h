@@ -5,3 +5,6 @@ const debounce = (fn, ms = 0) => {
       timeoutId = setTimeout(() => fn.apply(this, args), ms);
     };
   };
+
+
+const rearg = (fn, indexes) => (...args) => fn(...indexes.map(i => args[i]));
